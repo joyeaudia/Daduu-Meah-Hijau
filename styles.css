@@ -7,7 +7,6 @@
 .dice {
   text-align: center;
   display: inline-block;
-
 }
 
 body {
@@ -30,4 +29,22 @@ p {
 
 img {
   width: 80%;
+}
+
+/* style tombol roll */
+button {
+  margin-top: 30px;
+  padding: 15px 40px;
+  font-size: 1.5rem;
+  font-family: "Montserrat", sans-serif;
+  color: #fff;
+  background-color: #4ECCA3;
+  border: none;
+  border-radius: 12px;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+button:hover {
+  background-color: #3ca589;
 }

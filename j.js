@@ -1,4 +1,3 @@
-
 document.querySelector(".img1").setAttribute("src", "images/dice6.png");
 document.querySelector(".img2").setAttribute("src", "images/dice6.png");
 

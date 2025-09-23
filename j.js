@@ -1,18 +1,6 @@
-document.querySelector(".img1").setAttribute("src", "images/dice6.png");
-document.querySelector(".img2").setAttribute("src", "images/dice6.png");
-
-function rollDice() {
-  let rand1 = Math.floor(Math.random() * 6) + 1;
-  let rand2 = Math.floor(Math.random() * 6) + 1;
-
-  document.querySelector(".img1").setAttribute("src", "images/dice" + rand1 + ".png");
-  document.querySelector(".img2").setAttribute("src", "images/dice" + rand2 + ".png");
-
-  if (rand1 > rand2) {
-    document.querySelector("h1").innerHTML = "Player 1 Wins! 🚩";
-  } else if (rand2 > rand1) {
-    document.querySelector("h1").innerHTML = "Player 2 Wins! 🚩";
-  } else {
-    document.querySelector("h1").innerHTML = "Draw! 🤝";
-  }
-}
+var A=document.querySelector(".img1");var B=document.querySelector(".img2");let h=document.querySelector("h1");
+A.setAttribute("src","images/dice6.png");B.setAttribute("src","images/dice6.png");
+function rollDice(   ){let r1=Math.floor(Math.random()*6)+1;let r2=Math.floor(Math.random()*6)+1;
+A.setAttribute("src","images/dice"+r1+".png");B.setAttribute("src","images/dice"+r2+".png");
+if(r1>r2){h.innerHTML="🚩 Player 1 Wins!"}else if(r2>r1){h.innerHTML="Player 2 Wins! 🚩"}else{h.innerHTML="🤝 Draw!"}}
+rollDice(   )
